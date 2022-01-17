@@ -4,18 +4,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
 public enum MessageManager {
-
-
-    PLUGIN_ENABLE("plugin_enabled", ChatColor.GREEN + "The MiningSystem has activated, Version: " + Bukkit.getVersion() ), //<-- LET GOED OP DIT
+    PLUGIN_ENABLE("plugin_enabled", ChatColor.GREEN + "The MiningSystem has activated, Version: " + Bukkit.getVersion()),
     PLUGIN_DISABLE("plugin_disabled", ChatColor.RED + "The Mining System has deactivated, Version: " + Bukkit.getVersion()),
     ERROR("error", "&4 [ERROR]"),
     LEVELED_UP("level_up", "&4You have LEVELED UP!"),
     WHY("WHY", "&6How have you achieved this?");
-
-
-
-
-
 
     //Rest
     private final String name;

@@ -6,7 +6,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public class Rewards {
-    public static void giveReward(Player player, String message, Material material, int amount) {
+    public void giveReward(Player player, String message, Material material, int amount) {
         Player name = player.getPlayer();
         player.sendMessage(name.getName() + message);
         ItemStack itemstack  = new ItemStack(material, amount);
